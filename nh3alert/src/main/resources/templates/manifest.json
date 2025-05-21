@@ -1,0 +1,22 @@
+{
+    "name": "NH3 Alert",
+    "short_name": "NH3 Alert",
+    "description": "Ứng dụng cảnh báo nồng độ NH3 trong môi trường chăn nuôi.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/image/ammonia192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/image/ammonia512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

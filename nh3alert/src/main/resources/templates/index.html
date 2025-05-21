@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cảnh báo Nồng độ NH3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div id="connection-status" style="text-align:center; margin-top: 10px; font-weight: 500; color: gray;">
+        Đang kết nối...
+    </div>
+    <div class="container">
+        <div id="circle" class="circle">
+        <div id="ppm">-- ppm</div>
+        </div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+        <span class="legend-dot good"></span>
+        <span>An toàn</span>
+        </div>
+        <div class="legend-item">
+        <span class="legend-dot warning"></span>
+        <span>Cảnh báo</span>
+        </div>
+        <div class="legend-item">
+        <span class="legend-dot danger"></span>
+        <span>Nguy hiểm</span>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
